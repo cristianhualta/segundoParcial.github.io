@@ -17,6 +17,7 @@
     function calcular(){
         var bol =(document.convertidor.bolivianos.value)*1;
         var tot = bol/6.96;
+        tot = tot.toFixed(2);
         convertidor.reset();
         document.convertidor.dolar.value = tot;
     }
