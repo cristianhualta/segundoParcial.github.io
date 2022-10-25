@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Parcial 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+<script type="text/javascript">
+    function obtenerDatos(){
+        nombre = document.getElementById('nombre').value;
+        document.getElementById('nombreObtenido').value=nombre;
+        registro.reset();
+    }
+    function calcular(){
+        var bol =(document.convertidor.bolivianos.value)*1;
+        var tot = bol*6.96;
+        convertidor.reset();
+        document.convertidor.dolar.value = tot;
+    }
+</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Sobre Nosotros</li>
+                <li>Galeria</li>
+                <li>Contacto</li>
+                <!--<button>Suscribe</button>-->
+            </ul>
+        </nav>
+        <p>Bienvenido@<input type="text" name="nombreObtenido" id="nombreObtenido"></p>
+    </header>
+     <div class="banner">
+        <img src="https://i.pinimg.com/originals/21/ed/0d/21ed0d9c3619783c77457d6b5e41adb6.jpg" width="100%">
+    </div>
+    <div id="contenedor1">
+        <div class="caja">
+            <p>INICIAR SESIÓN</p>
+            <form id="registro">
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre de usuario">
+                <input type="button" name="btn1" value="Ingresar" onclick="obtenerDatos()">
+            </form>
+        </div>
+        <div class="caja">
+            <img src="https://www.cursoemvideo.com/wp-content/uploads/2019/08/html5.jpg" width="300px" height="300px">
+        </div>
+        <div class="caja">
+            <p>HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).</p>
+        </div>
+    </div>
+     <div id="contenedor2">
+        <div class="caja2">
+            <div class="caja3">
+            <p><img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="20px" height="20px">Item Uno</p>
+            </div>
+            <div class="caja3">
+            <p><img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" width="20px" height="20px">Item Dos</p>
+            </div>
+            <div class="caja3">
+            <p><img src="https://cdn-icons-png.flaticon.com/512/594/594846.png" width="20px" height="20px">Item Tres</p>
+            </div>
+            <div class="caja3">
+            <p><img src="https://cdn-icons-png.flaticon.com/512/595/595018.png" width="20px" height="20px">Item Cuatro</p>
+            </div>
+            <div class="caja3">
+            <p><img src="https://cdn-icons-png.flaticon.com/512/595/595067.png" width="20px" height="20px">Item Cinco</p>
+            </div>
+            <div class="caja3">
+             <p><img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" width="20px" height="20px">Item Seis</p>
+            </div>
+        </div>
+        <div class="caja2">
+            <p>Con este conversor de moneda simple y preciso puedes convertir 1 Bolivianos a Dólares en tiempo real. El conversor de moneda permite realizar conversiones con tipos de cambio que se actualizan continuamente y se obtienen directamente del mercado interbancario.</p>
+        </div>
+        <div class="caja2">
+            <form name="convertidor">
+                <h3>CONVERSOR Bs A DOLAR: </h3>
+                <br>Bs: <input type="text" name="bolivianos">
+                <br>
+                <br>Dolares: <input type="text" name="dolar">
+                <br>
+                <br> <input type="button" value="CONVERTIR" onclick="calcular();">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
