@@ -21,6 +21,12 @@
         convertidor.reset();
         document.convertidor.dolar.value = tot;
     }
+    function calcular2(){
+        var dol =(document.convertidor.dolar.value)*1;
+        var tot = dol*6.96;
+        tot = tot.toFixed(2);
+        document.convertidor.bolivianos.value = tot;
+    }
 </script>
 </head>
 <body>
@@ -85,7 +91,8 @@
                 <br>
                 <br>Dolares: <input type="text" name="dolar">
                 <br>
-                <br> <input type="button" value="CONVERTIR" onclick="calcular();">
+                <br> <input type="button" value="BOLIVIANOS" onclick="calcular();">
+                <br> <input type="button" value="DOLARES" onclick="calcular2();">
             </form>
         </div>
     </div>
